@@ -70,6 +70,10 @@ h2 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 
 .numberCircle {
     border-radius: 50%;
@@ -103,4 +107,10 @@ h2 {
 	font-weight: bold;
 	font-size: 20px;
 }	
+
+.middleimages {
+    /* Display them as inline-blocks; */
+    display: inline-block;
+    text-align: center;
+}
 

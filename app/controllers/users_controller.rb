@@ -7,14 +7,19 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
-	  def create
-	    User.create(quote_params)
-	  end
+	def create
+		User.create(user_params)
+		redirect_to success_path
+	end
 
-	  private
+	def success
+	end
 
-	  def quote_params
-	    params.require(:user).permit(:email)
-	  end
+
+	private
+
+	def user_params
+		params.require(:user).permit(:email)
+	end
 
 end
