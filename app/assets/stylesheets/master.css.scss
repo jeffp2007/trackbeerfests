@@ -1,7 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
 .clear {
 	clear: both;
 }
 
 .my_headline_font_size {
-	font-size: 24px;
+	font-size: 20px;
+}
+
+/***** Begin Logo CSS *****/
+
+.logo {
+  background:#fff;
+  position:relative;
+  padding-top:1em;
+  padding-left:2em;
+  font-size:4px;
+  float:left;
+  height:16.5em;
+  
+  .title {
+    float:left;
+    font-size:6em;
+
+    font-family:'Droid Sans', Helvetica, Arial, sans-serif;
+    font-weight:400;
+    letter-spacing:0.025em;
+
+    a {
+      color:#184668;
+      text-decoration:none;
+      transition:.5s;
+    }
+  }
+}
+
+/***** End Logo CSS *****/
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  padding-top: 2.2em;
+  text-align: left;
+}
+
+.nav {
+	padding-top: 1.2em;
+
+}
+
+header {
+  border-top: 9px solid #184668;
+}
+
+hr {
+  clear:both;
 }
