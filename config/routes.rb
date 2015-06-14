@@ -55,5 +55,8 @@ Trackbeerfests::Application.routes.draw do
   #   end
 
   root 'pages#index'
+  get 'signup', :to => 'pages#signup'
+
+  resources :user
 
 end
