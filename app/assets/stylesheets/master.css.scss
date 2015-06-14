@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 
 .clear {
 	clear: both;
@@ -55,4 +56,12 @@ header {
 
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
 }
