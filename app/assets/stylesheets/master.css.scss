@@ -60,8 +60,44 @@ hr {
 
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
+  padding-bottom:40px;
 }
 
 h2 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 90px;
+    height: 90px;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #184668;
+    color: #184668;
+    text-align: center;
+
+    font-size: 50px;
+}
+
+.row {
+	padding-bottom:20px;
+}
+
+.home-img {
+	vertical-align: middle;
+}
+
+.home-points {
+	text-align: left;
+}
+
+.home-points-headline {
+	font-weight: bold;
+	font-size: 20px;
+}	
+
