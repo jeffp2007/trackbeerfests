@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Trackbeerfests</title>
+  <title>Track Beer Fests | The Only App To Track All Your Beer Fests</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<header>
+	<div class="col-xs-3">
+		Track Beer Fests
+	</div>
+	<div class="col-xs-4">
+		The only app to track all your beer fests
+	</div>
+	<div class="col-xs-5">
+		<%= link_to 'Sign Up', '#' %>
+	</div>
+</header>
+
+<br class="clear" />
 
 <%= yield %>
 
