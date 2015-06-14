@@ -8,8 +8,14 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		User.create(user_params)
-		redirect_to success_path
+	    @user = User.create(user_params)
+	    if @user.invalid?
+	      flash[:error] = '<strong>Email address invalid.</strong>'
+	      redirect_to signup_path
+	    else
+	      flash[:success] = '<strong>You have signed up for priority access.</strong>'
+	      redirect_to success_path
+	    end
 	end
 
 	def success
