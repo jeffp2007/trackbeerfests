@@ -1,0 +1,119 @@
+commit bfcd7e55510395dc0196677b4964f47ea7f42719
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 23:59:18 2015 +0000
+
+    Adjust stylinh on signup page
+
+commit a6342bb2028ce0765e528b9d71d6799b3bdab3f4
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 23:39:32 2015 +0000
+
+    make mobile optimized
+
+commit 38322f82e8e988d5896ce29009d952508971a9c8
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 22:01:17 2015 +0000
+
+    adjust more heading styling
+
+commit 5dcc8e6c2ad8d3d7aa90d414700741c4a75a427f
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 21:52:54 2015 +0000
+
+    Adjust heading spacer
+
+commit b60739d930ec2e1941e491ae1c634e438fb959a4
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 21:48:35 2015 +0000
+
+    Fixed header css
+
+commit f46f1587ef23fd7d31eb0c4fa51229780be4b2ad
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 16:13:51 2015 +0000
+
+    Updated error message display
+
+commit ee2560dbba1dc878f569b4798fc6d76f306de37d
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 16:09:13 2015 +0000
+
+    Updated error message displays, redirects
+
+commit d15e45faa71a220a004d8a3aa4a1458d711b61f0
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 15:25:14 2015 +0000
+
+    Added success page
+
+commit 0e1e6889a1f9e797ccb70a9dddd8fd9bb488dc7d
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 08:47:34 2015 +0000
+
+    Try to fix signup page routing
+
+commit 53b74860920aafc0af0f663520791c1108dedb11
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 08:28:22 2015 +0000
+
+    Fixed errors with the database and form
+
+commit b964dcaa1fcd1fa0ced9788b5361f743dc586651
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 06:21:47 2015 +0000
+
+    Added signup page and created database
+
+commit e99f8ec3f5afd1bcf4dafad65c7a1921c33a4fe2
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 05:35:40 2015 +0000
+
+    Creating content for the home page
+
+commit 867ec5cba5283ce3c921c8573763e5e8c56bbdee
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 03:26:26 2015 +0000
+
+    Added a footer
+
+commit 69bd1c53f90ebbfd59b3dd3cc7bdd4421beb3bc5
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 03:18:05 2015 +0000
+
+    Update fonts
+
+commit b7c62707796828b4d99807145541abebaa128eda
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 03:15:36 2015 +0000
+
+    Style top nav
+
+commit 00b25e28d780cc89c20709b6830ebf0144e48192
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 01:26:10 2015 +0000
+
+    Create top navigation bar
+
+commit 01dded54c722aec191878861a5ba81f5808b6d9c
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 01:18:23 2015 +0000
+
+    Added bootstrap
+
+commit a861dd22c8b4a226a4eb6c12fdc12a82c1de1745
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 01:12:58 2015 +0000
+
+    Created index page
+
+commit 872c7a18bb19089738fc629445b91b98e128cd98
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 01:02:50 2015 +0000
+
+    Adjust production.rb so it compiles assets
+
+commit 4939d0af10da6feeb5d03a690ee3b2cc295a4e0a
+Author: Jeff Powers <jeffp2007@gmail.com>
+Date:   Sun Jun 14 00:59:43 2015 +0000
+
+    Initial commit
