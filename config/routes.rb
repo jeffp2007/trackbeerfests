@@ -4,6 +4,7 @@ Trackbeerfests::Application.routes.draw do
   resources :users
   get 'signup', :to => 'users#signup'
   get 'success', :to => 'users#success'
+  get 'thanks', :to => 'users#thanks'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

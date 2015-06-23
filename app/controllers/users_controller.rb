@@ -18,6 +18,9 @@ class UsersController < ApplicationController
 	    end
 	end
 
+	def thanks
+	end
+
 	def success
 	end
 
