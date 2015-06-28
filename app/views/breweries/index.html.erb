@@ -1,1 +1,10 @@
-<h1>List of Breweries</h1>
+<% @breweries.each do |brewery| %>
+  <div class="booyah-box col-xs-10 col-xs-offset-1">
+    <h2><%= link_to brewery.brewery_name, brewery_path(brewery) %></h2>
+    <p>
+    	<%= brewery.brewery_city %>, <%= brewery.brewery_state %>
+    </p>
+        <%= link_to 'More Info', brewery_path(brewery), :class => 'btn btn-primary pull-right', :role => 'button' %>
+  </div>
+
+<% end %>

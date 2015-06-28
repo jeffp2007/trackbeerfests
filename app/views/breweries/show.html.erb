@@ -1,0 +1,19 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1><%= @brewery.brewery_name %></h1><br />
+	<p>
+		<%= @brewery.brewery_address %><br/>
+		<%= @brewery.brewery_city %>, <%= @brewery.brewery_state %> <%= @brewery.brewery_zip %>
+	</p>
+	<p>
+		<%= link_to "Website", @brewery.brewery_website, :target => "_blank" %> &nbsp;|&nbsp;
+		<% if @brewery.brewery_facebook != nil %>
+			<%= link_to "Facebook", @brewery.brewery_facebook, :target => "_blank" %> &nbsp;|&nbsp;
+		<% end %>
+		<% if @brewery.brewery_twitter != nil %>
+			<%= link_to "Twitter", @brewery.brewery_twitter, :target => "_blank" %>
+		<% end %>
+	</p>
+	<p>
+		<%= @brewery.brewery_description %>
+	</p>
+</div>

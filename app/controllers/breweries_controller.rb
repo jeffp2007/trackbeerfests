@@ -13,6 +13,9 @@ class BreweriesController < ApplicationController
 		redirect_to breweries_path
 	end
 
+	def show
+		@brewery = Brewery.find(params[:id])
+	end
 
 
 	private
