@@ -10,6 +10,9 @@ Trackbeerfests::Application.routes.draw do
   resources :beers
   get 'show', :to => 'beers#show'
 
+  resources :events
+  get 'show', :to => 'events#show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
