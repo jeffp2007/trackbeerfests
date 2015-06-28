@@ -9,7 +9,7 @@ class CreateBreweries < ActiveRecord::Migration
       t.string :brewery_zip
       t.string :brewery_country
 
-      t.string :brewery_description
+      t.text :brewery_description
       t.string :brewery_website
       t.string :brewery_twitter
       t.string :brewery_facebook
