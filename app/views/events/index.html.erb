@@ -1,8 +1,7 @@
 <% @events.each do |event| %>
   <div class="booyah-box col-xs-10 col-xs-offset-1">
-    <h2><%= link_to event.event_name, event_path(event) %></h2><br/>
-    <p><b><%= event.event_start_date.strftime("%A, %B %d, %Y") %></b></p>
-    <p>
+    <h2><%= link_to event.event_name, event_path(event) %></h2><br />
+    <p><strong><%= event.event_start_date.strftime("%A, %B %d, %Y") %></strong><br />
     	<%= event.event_loc_name %>
     	<br />
    		<i><%= event.event_loc_city %>, <%= event.event_loc_state %></i>
