@@ -5,12 +5,12 @@
 		<%= @brewery.brewery_city %>, <%= @brewery.brewery_state %> <%= @brewery.brewery_zip %>
 	</p>
 	<p>
-		<%= link_to "Website", @brewery.brewery_website, :target => "_blank" %> &nbsp;|&nbsp;
-		<% if @brewery.brewery_facebook != nil %>
-			<%= link_to "Facebook", @brewery.brewery_facebook, :target => "_blank" %> &nbsp;|&nbsp;
+		<%= link_to "Website", @brewery.brewery_website, :target => "_blank" %>
+		<% if @brewery.brewery_facebook != "" %>
+			&nbsp;|&nbsp; <%= link_to "Facebook", @brewery.brewery_facebook, :target => "_blank" %>
 		<% end %>
-		<% if @brewery.brewery_twitter != nil %>
-			<%= link_to "Twitter", @brewery.brewery_twitter, :target => "_blank" %>
+		<% if @brewery.brewery_twitter != "" %>
+			&nbsp;|&nbsp; <%= link_to "Twitter", @brewery.brewery_twitter, :target => "_blank" %>
 		<% end %>
 	</p>
 	<p>

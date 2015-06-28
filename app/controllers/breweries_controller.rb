@@ -17,6 +17,17 @@ class BreweriesController < ApplicationController
 		@brewery = Brewery.find(params[:id])
 	end
 
+	def edit
+		@brewery = Brewery.find(params[:id])
+	end
+
+	def update
+		@brewery = Brewery.find(params[:id])
+		@brewery.update_attributes(brewery_params)
+		redirect_to breweries_path
+	end
+
+
 
 	private
 

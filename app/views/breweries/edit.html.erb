@@ -1,0 +1,20 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1>Update Brewery Details</h1>
+	<br />
+	<%= simple_form_for @brewery do |f| %>
+    <%= f.input :brewery_name %>
+    <br />
+    <%= f.input :brewery_address %>
+    <%= f.input :brewery_city %>
+    <%= f.input :brewery_state %>
+    <%= f.input :brewery_zip %>
+    <br />
+    <%= f.input :brewery_website %>
+    <%= f.input :brewery_twitter %>
+    <%= f.input :brewery_facebook %>
+    <br />
+    <%= f.input :brewery_description %>
+    <br />
+    <%= f.submit 'Update', :class => 'btn btn-primary' %>
+  <% end %>
+</div>
