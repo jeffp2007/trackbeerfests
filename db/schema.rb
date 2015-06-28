@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150628150836) do
     t.string   "beer_style"
     t.text     "beer_description"
     t.integer  "beer_ibu"
-    t.integer  "beer_abv"
+    t.float    "beer_abv"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

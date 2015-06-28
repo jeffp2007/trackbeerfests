@@ -1,11 +1,13 @@
 Trackbeerfests::Application.routes.draw do
 
   root 'users#index'
+
   resources :users
   get 'signup', :to => 'users#signup'
   get 'success', :to => 'users#success'
   get 'thanks', :to => 'users#thanks'
 
+  resources :beers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

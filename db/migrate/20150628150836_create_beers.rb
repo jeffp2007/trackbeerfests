@@ -6,7 +6,7 @@ class CreateBeers < ActiveRecord::Migration
       t.string :beer_style
       t.text :beer_description
       t.integer :beer_ibu
-	  t.integer :beer_abv
+	  t.float :beer_abv
 
 
       t.timestamps

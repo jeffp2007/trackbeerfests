@@ -1,0 +1,12 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1>Enter Beer Details</h1>
+	<%= simple_form_for @beer do |f| %>
+    <%= f.input :beer_name %>
+    <%= f.input :beer_style %>
+    <%= f.input :beer_abv %>
+    <%= f.input :beer_ibu %>
+    <%= f.input :beer_description %>
+    <br />
+    <%= f.submit 'Create', :class => 'btn btn-primary' %>
+  <% end %>
+</div>
