@@ -3,9 +3,11 @@
     <h2><%= link_to event.event_name, event_path(event) %></h2><br/>
     <p><b><%= event.event_start_date.strftime("%A, %B %d, %Y") %></b></p>
     <p>
-    	<%= event.event_loc_name %><br />
+    	<%= event.event_loc_name %>
+    	<br />
    		<i><%= event.event_loc_city %>, <%= event.event_loc_state %></i>
 	</p>
+	<%= link_to 'More Info', event_path(event), :class => 'btn btn-primary pull-right', :role => 'button' %>
   </div>
 
 <% end %>
