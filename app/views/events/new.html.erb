@@ -1,0 +1,23 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1>Enter Beer Details</h1>
+	<%= simple_form_for @event do |f| %>
+    <%= f.input :event_name %>
+
+    <br />
+    <%= f.input :event_loc_name %>
+    <%= f.input :event_loc_address %>
+    <%= f.input :event_loc_city %>
+    <%= f.input :event_loc_state %>
+    <%= f.input :event_loc_zip %>
+
+    <br />
+    <%= f.input :event_start_date %>
+    <%= f.input :event_end_date %>
+
+    <br />
+    <%= f.input :event_description %>
+
+    <br />
+    <%= f.submit 'Create', :class => 'btn btn-primary' %>
+  <% end %>
+</div>
