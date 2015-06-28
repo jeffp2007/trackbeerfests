@@ -1,0 +1,17 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1><%= @event.event_name %></h1><br />
+    <p>
+    	<b><%= @event.event_start_date.strftime("%A, %B %d, %Y") %></b>
+	</p>
+    <p>
+    	<%= @event.event_loc_name %><br />
+		<%= @event.event_loc_address %><br />
+    	<%= @event.event_loc_city %>, <%= @event.event_loc_state %> <%= @event.event_loc_zip %><br />
+    </p>
+    <p>
+		<%= link_to @event.event_website, "#{@event.event_website}", :target => "_blank" %>
+    </p>
+    <p>
+		<%= @event.event_description %>
+	</p>
+</div>
