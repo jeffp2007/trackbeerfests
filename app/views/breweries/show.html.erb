@@ -23,11 +23,11 @@
 	<h2>Beers from <%= @brewery.brewery_name %></h2>
 	<br />
 	<% @beers.each do |beer| %>
-		<% if beer.brewery_id = @brewery.id %>
-			<strong><%= beer.beer_name %></strong><br />
+		<% if beer.brewery_id == @brewery.id %>
+			<strong><%= link_to beer.beer_name, beer_path(beer) %></strong><br />
 			<%= beer.beer_style %><br />
 			<%= beer.beer_abv %> ABV &nbsp;|&nbsp; <%= beer.beer_ibu %> IBU
+			<hr />
 		<% end %>
-		<hr />
 	<% end %>
 </div>
