@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150629010408) do
+ActiveRecord::Schema.define(version: 20150629050158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "beer_supplies", force: true do |t|
+    t.integer  "beer_id"
+    t.integer  "event_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "beers", force: true do |t|
     t.string   "beer_name"
@@ -25,9 +32,11 @@ ActiveRecord::Schema.define(version: 20150629010408) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "brewery_id"
+    t.integer  "event_id"
   end
 
   add_index "beers", ["brewery_id"], name: "index_beers_on_brewery_id", using: :btree
+  add_index "beers", ["event_id"], name: "index_beers_on_event_id", using: :btree
 
   create_table "breweries", force: true do |t|
     t.string   "brewery_name"

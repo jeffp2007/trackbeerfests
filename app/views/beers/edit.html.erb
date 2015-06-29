@@ -8,6 +8,9 @@
     <%= f.input :beer_style %>
     <%= f.input :beer_abv %>
     <%= f.input :beer_ibu %>
+    <%= f.label "Select events" %>
+    <br />
+    <%= f.collection_select :event_id, Event.all, :id, :event_name, prompt: true %>
     <%= f.input :beer_description %>
     <br />
     <%= f.submit 'Update', :class => 'btn btn-primary' %>

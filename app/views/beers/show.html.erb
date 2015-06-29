@@ -5,3 +5,17 @@
 	<%= @beer.beer_abv %>% ABV &nbsp;|&nbsp; <%= @beer.beer_ibu %> IBU</p><br />
 	<p><%= @beer.beer_description %></p>
 </div>
+
+<div class="col-xs-10 col-xs-offset-1">
+	<br /><br />
+	<h2>Events Serving <%= @beer.beer_name %></h2>
+	<br />
+	<% @events.each do |event| %>
+		<% if event.id == @beer.event_id %>
+			<strong><%= link_to event.event_name, event_path(event) %></strong><br />
+			<%= event.event_start_date.strftime("%A, %B %d, %Y") %><br />
+			<%= event.event_loc_city %>, <%= event.event_loc_state %>
+			<hr />
+		<% end %>
+	<% end %>
+</div>
