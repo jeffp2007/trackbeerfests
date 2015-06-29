@@ -9,12 +9,13 @@ class BeersController < ApplicationController
 	end
 
 	def create
-		Beer.create(beer_params)
+		@beer = Beer.create(beer_params)
 		redirect_to beers_path
 	end
 
 	def show
 		@beer = Beer.find(params[:id])
+		@brewery = Brewery.find(Beer.find(params[:id]).brewery_id)
 	end
 
 	def edit
@@ -32,7 +33,7 @@ class BeersController < ApplicationController
 	private
 
 	def beer_params
-		params.require(:beer).permit(:beer_name, :beer_style, :beer_abv, :beer_ibu, :beer_description)
+		params.require(:beer).permit(:beer_name, :beer_style, :beer_abv, :beer_ibu, :beer_description, :brewery_id)
 	end
 
 end

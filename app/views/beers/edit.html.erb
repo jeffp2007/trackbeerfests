@@ -2,6 +2,9 @@
 	<h1>Update Beer Details</h1>
 	<%= simple_form_for @beer do |f| %>
     <%= f.input :beer_name %>
+    <%= f.label "Brewery name" %>
+    <br />
+    <%= f.collection_select :brewery_id, Brewery.all, :id, :brewery_name, prompt: true %>
     <%= f.input :beer_style %>
     <%= f.input :beer_abv %>
     <%= f.input :beer_ibu %>
