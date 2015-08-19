@@ -10,7 +10,16 @@
     <%= f.input :beer_ibu %>
     <%= f.label "Select events" %>
     <br />
-    <%= f.collection_select :event_id, Event.all, :id, :event_name, prompt: true %>
+    
+
+    <% for event in @events %>
+        <li>
+            <%= check_box_tag 'event_ids[]', event.id, (checked = true if event.beer_supplies.includes(@beer.id)) %>
+            <%= event.event_name %>
+        </li>
+    <% end %>
+
+    
     <%= f.input :beer_description %>
     <br />
     <%= f.submit 'Update', :class => 'btn btn-primary' %>

@@ -10,12 +10,41 @@
 	<br /><br />
 	<h2>Events Serving <%= @beer.beer_name %></h2>
 	<br />
+	<% x = 0 %>
 	<% @events.each do |event| %>
-		<% if event.id == @beer.event_id %>
+		<% if @beer.event_id == nil %>
+			No events listed. Please check back later.
+		<% elsif event.id == @beer.event_id %>
 			<strong><%= link_to event.event_name, event_path(event) %></strong><br />
 			<%= event.event_start_date.strftime("%A, %B %d, %Y") %><br />
 			<%= event.event_loc_city %>, <%= event.event_loc_state %>
+			<% x = x + 1 %>
 			<hr />
+		<% end %>
+	<% end %>
+</div>
+
+
+<div class="col-xs-10 col-xs-offset-1">
+	<br /><br />
+	<h2>TEST EVENT LISTING</h2>
+	<br />
+	BEER EVENTS: <%= @beer_events.inspect %>
+	<%# @beer_events.each do |event| %>
+	<%#= puts event %>
+	<%# end %>
+</div>
+
+
+<div class="col-xs-10 col-xs-offset-1">
+	<br /><br />
+	<h2>BEER SUPPLIES</h2>
+	<br />
+	BEER SUPPLIES:
+	<%= @beer_supplies.inspect %>
+	<% @beer_supplies.each do |listing| %>
+		<% if listing.beer_id == @beer.id %>
+			<%#= @events(listing.event_id).event_name %>
 		<% end %>
 	<% end %>
 </div>

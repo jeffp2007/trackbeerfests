@@ -13,7 +13,7 @@ Trackbeerfests::Application.routes.draw do
   resources :breweries
   get 'show', :to => 'breweries#show'
 
-  resources :beers
+  resources :beers, :collection => { :select_event => :put }
   get 'show', :to => 'beers#show'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -26,7 +26,7 @@
 		<% if beer.brewery_id == @brewery.id %>
 			<strong><%= link_to beer.beer_name, beer_path(beer) %></strong><br />
 			<%= beer.beer_style %><br />
-			<%= beer.beer_abv %> ABV &nbsp;|&nbsp; <%= beer.beer_ibu %> IBU
+			<%= beer.beer_abv %>% ABV &nbsp;|&nbsp; <%= beer.beer_ibu %> IBU
 			<hr />
 		<% end %>
 	<% end %>
